@@ -1,0 +1,9 @@
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\bin\Debug\netstandard2.0\Wooza.Telephony.Repository.deps.json
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\bin\Debug\netstandard2.0\Wooza.Telephony.Repository.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.csprojAssemblyReference.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.AssemblyInfoInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.AssemblyInfo.cs
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\bin\Debug\netstandard2.0\Wooza.Telephony.Repository.pdb
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.csproj.CoreCompileInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Repository\obj\Debug\netstandard2.0\Wooza.Telephony.Repository.pdb
