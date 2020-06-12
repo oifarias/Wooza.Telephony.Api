@@ -7,6 +7,7 @@ using Wooza.Telephony.Application.Services.Handlers.Model;
 namespace Wooza.Telephony.Application.Services.Handlers
 {
     public class NewPlanHandler : IRequestHandler<NewPlanRequest, NewPlanResponse>
+
     { 
         public NewPlanHandler()
         {

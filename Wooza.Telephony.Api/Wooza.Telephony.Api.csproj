@@ -37,6 +37,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Wooza.Telephony.Application\Wooza.Telephony.Application.csproj" />
+		<ProjectReference Include="..\Wooza.Telephony.Repository\Wooza.Telephony.Repository.csproj" />
 	</ItemGroup>
 
 </Project>
