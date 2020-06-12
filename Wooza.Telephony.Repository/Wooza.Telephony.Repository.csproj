@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wooza.Telephony.Contract\Wooza.Telephony.Contract.csproj" />
+    <ProjectReference Include="..\Wooza.Telephony.Model\Wooza.Telephony.Model.csproj" />
+  </ItemGroup>
+
 </Project>

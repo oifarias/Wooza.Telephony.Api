@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Wooza.Telephony.Model.Model;
 
 namespace Wooza.Telephony.Repository.Data
 {
@@ -11,7 +9,9 @@ namespace Wooza.Telephony.Repository.Data
         {
         }
 
-    
+        public DbSet<PlanType> PlanTypes { get; set; }
+        public DbSet<Plan> Plans { get; set; }
+        public DbSet<PlanOperator> PlanOperator { get; set; }
 
     }
 }

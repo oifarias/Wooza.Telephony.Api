@@ -319,6 +319,32 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "Wooza.Telephony.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Wooza.Telephony.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Wooza.Telephony.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wooza.Telephony.Contract.dll": {}
+        }
+      },
+      "Wooza.Telephony.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Wooza.Telephony.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wooza.Telephony.Model.dll": {}
+        }
       }
     }
   },
@@ -1054,12 +1080,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Wooza.Telephony.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Wooza.Telephony.Contract/Wooza.Telephony.Contract.csproj",
+      "msbuildProject": "../Wooza.Telephony.Contract/Wooza.Telephony.Contract.csproj"
+    },
+    "Wooza.Telephony.Model/1.0.0": {
+      "type": "project",
+      "path": "../Wooza.Telephony.Model/Wooza.Telephony.Model.csproj",
+      "msbuildProject": "../Wooza.Telephony.Model/Wooza.Telephony.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.EntityFrameworkCore.InMemory >= 3.1.5",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Wooza.Telephony.Contract >= 1.0.0",
+      "Wooza.Telephony.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1093,7 +1131,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lucas.farias\\Documents\\lucas\\Wooza\\Wooza.Telephony.Api\\Wooza.Telephony.Contract\\Wooza.Telephony.Contract.csproj": {
+              "projectPath": "C:\\Users\\lucas.farias\\Documents\\lucas\\Wooza\\Wooza.Telephony.Api\\Wooza.Telephony.Contract\\Wooza.Telephony.Contract.csproj"
+            },
+            "C:\\Users\\lucas.farias\\Documents\\lucas\\Wooza\\Wooza.Telephony.Api\\Wooza.Telephony.Model\\Wooza.Telephony.Model.csproj": {
+              "projectPath": "C:\\Users\\lucas.farias\\Documents\\lucas\\Wooza\\Wooza.Telephony.Api\\Wooza.Telephony.Model\\Wooza.Telephony.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

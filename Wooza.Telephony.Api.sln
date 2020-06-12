@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wooza.Telephony.Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wooza.Telephony.Repository", "Wooza.Telephony.Repository\Wooza.Telephony.Repository.csproj", "{2C8FBCAD-98D7-46FB-8F89-BE9A0926C7C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wooza.Telephony.Contract", "Wooza.Telephony.Contract\Wooza.Telephony.Contract.csproj", "{1AB25369-DB73-428E-9351-FDBBE1B822E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wooza.Telephony.Model", "Wooza.Telephony.Model\Wooza.Telephony.Model.csproj", "{C0CC54D8-75F9-4D9B-AC47-71596226D181}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2C8FBCAD-98D7-46FB-8F89-BE9A0926C7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8FBCAD-98D7-46FB-8F89-BE9A0926C7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8FBCAD-98D7-46FB-8F89-BE9A0926C7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB25369-DB73-428E-9351-FDBBE1B822E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB25369-DB73-428E-9351-FDBBE1B822E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB25369-DB73-428E-9351-FDBBE1B822E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB25369-DB73-428E-9351-FDBBE1B822E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0CC54D8-75F9-4D9B-AC47-71596226D181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CC54D8-75F9-4D9B-AC47-71596226D181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CC54D8-75F9-4D9B-AC47-71596226D181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CC54D8-75F9-4D9B-AC47-71596226D181}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

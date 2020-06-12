@@ -3245,7 +3245,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MediatR": "7.0.0"
+          "MediatR": "7.0.0",
+          "Wooza.Telephony.Contract": "1.0.0",
+          "Wooza.Telephony.Model": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wooza.Telephony.Application.dll": {}
@@ -3254,11 +3256,39 @@
           "bin/placeholder/Wooza.Telephony.Application.dll": {}
         }
       },
+      "Wooza.Telephony.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Wooza.Telephony.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Wooza.Telephony.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wooza.Telephony.Contract.dll": {}
+        }
+      },
+      "Wooza.Telephony.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Wooza.Telephony.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wooza.Telephony.Model.dll": {}
+        }
+      },
       "Wooza.Telephony.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.5"
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.5",
+          "Wooza.Telephony.Contract": "1.0.0",
+          "Wooza.Telephony.Model": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wooza.Telephony.Repository.dll": {}
@@ -9422,6 +9452,16 @@
       "type": "project",
       "path": "../Wooza.Telephony.Application/Wooza.Telephony.Application.csproj",
       "msbuildProject": "../Wooza.Telephony.Application/Wooza.Telephony.Application.csproj"
+    },
+    "Wooza.Telephony.Contract/1.0.0": {
+      "type": "project",
+      "path": "../Wooza.Telephony.Contract/Wooza.Telephony.Contract.csproj",
+      "msbuildProject": "../Wooza.Telephony.Contract/Wooza.Telephony.Contract.csproj"
+    },
+    "Wooza.Telephony.Model/1.0.0": {
+      "type": "project",
+      "path": "../Wooza.Telephony.Model/Wooza.Telephony.Model.csproj",
+      "msbuildProject": "../Wooza.Telephony.Model/Wooza.Telephony.Model.csproj"
     },
     "Wooza.Telephony.Repository/1.0.0": {
       "type": "project",

@@ -1,0 +1,12 @@
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.csprojAssemblyReference.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.AssemblyInfoInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.AssemblyInfo.cs
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.csproj.CoreCompileInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\bin\Debug\netstandard2.0\Wooza.Telephony.Contract.deps.json
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\bin\Debug\netstandard2.0\Wooza.Telephony.Contract.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\bin\Debug\netstandard2.0\Wooza.Telephony.Contract.pdb
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\bin\Debug\netstandard2.0\Wooza.Telephony.Model.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\bin\Debug\netstandard2.0\Wooza.Telephony.Model.pdb
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.csproj.CopyComplete
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Contract\obj\Debug\netstandard2.0\Wooza.Telephony.Contract.pdb

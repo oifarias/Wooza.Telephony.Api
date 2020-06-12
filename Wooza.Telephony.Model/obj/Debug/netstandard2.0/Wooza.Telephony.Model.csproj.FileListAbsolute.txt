@@ -1,0 +1,9 @@
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\bin\Debug\netstandard2.0\Wooza.Telephony.Model.deps.json
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\bin\Debug\netstandard2.0\Wooza.Telephony.Model.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\bin\Debug\netstandard2.0\Wooza.Telephony.Model.pdb
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.csprojAssemblyReference.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.AssemblyInfoInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.AssemblyInfo.cs
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.csproj.CoreCompileInputs.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.dll
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Model\obj\Debug\netstandard2.0\Wooza.Telephony.Model.pdb

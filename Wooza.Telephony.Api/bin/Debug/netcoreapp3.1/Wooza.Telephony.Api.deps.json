@@ -2627,7 +2627,9 @@
       },
       "Wooza.Telephony.Application/1.0.0": {
         "dependencies": {
-          "MediatR": "7.0.0"
+          "MediatR": "7.0.0",
+          "Wooza.Telephony.Contract": "1.0.0",
+          "Wooza.Telephony.Model": "1.0.0"
         },
         "runtime": {
           "Wooza.Telephony.Application.dll": {}
@@ -2636,9 +2638,33 @@
           "Wooza.Telephony.Application.dll": {}
         }
       },
+      "Wooza.Telephony.Contract/1.0.0": {
+        "dependencies": {
+          "Wooza.Telephony.Model": "1.0.0"
+        },
+        "runtime": {
+          "Wooza.Telephony.Contract.dll": {}
+        },
+        "compile": {
+          "Wooza.Telephony.Contract.dll": {}
+        }
+      },
+      "Wooza.Telephony.Model/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "Wooza.Telephony.Model.dll": {}
+        },
+        "compile": {
+          "Wooza.Telephony.Model.dll": {}
+        }
+      },
       "Wooza.Telephony.Repository/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.5"
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.5",
+          "Wooza.Telephony.Contract": "1.0.0",
+          "Wooza.Telephony.Model": "1.0.0"
         },
         "runtime": {
           "Wooza.Telephony.Repository.dll": {}
@@ -5763,6 +5789,16 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "Wooza.Telephony.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wooza.Telephony.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wooza.Telephony.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AetWlZjhj4pTmNHLgcmnVOZzvWDlCix2Kk503bmXUrZzLTqcOp1o4JGiN057hCdjf3QhRQnTinrpfKpRflDr8A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucas.farias\\Documents\\lucas\\Wooza\\Wooza.Telephony.Api\\Wooza.Telephony.Model\\Wooza.Telephony.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas.farias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\lucas.farias\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
