@@ -1,8 +1,11 @@
 ﻿using MediatR;
 using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Wooza.Telephony.Application.Services.Handlers.Commands.DeletePlan;
+using Wooza.Telephony.Application.Services.Handlers.Commands.ListPlan;
 using Wooza.Telephony.Application.Services.Handlers.Commands.PutPlan;
 using Wooza.Telephony.Application.Services.Handlers.Commands.UpdatePlan;
 using Wooza.Telephony.Application.Services.Handlers.Model;
@@ -13,7 +16,8 @@ namespace Wooza.Telephony.Application.Services.Handlers
 {
     public class PlanHandler : IRequestHandler<NewPlanRequest, NewPlanResponse>,
                                IRequestHandler<UpdatePlanRequest, UpdatePlanResponse>,
-                               IRequestHandler<DeletePlanRequest, DeletePlanResponse>
+                               IRequestHandler<DeletePlanRequest, DeletePlanResponse>,
+                               IRequestHandler<ListPlansRequest, ListPlansResponse>
     {
         private readonly IPlanRepository _planRepository;
 
@@ -64,6 +68,12 @@ namespace Wooza.Telephony.Application.Services.Handlers
         {
             var response = await _planRepository.DeletePlanAsync(request.PlanId);
             return new DeletePlanResponse() { Response = response };
+        }
+
+        public async Task<ListPlansResponse> Handle(ListPlansRequest request, CancellationToken cancellationToken)
+        {
+            List<Plan> response = await _planRepository.ListPlansAsync();
+            return new ListPlansResponse() { ListPlans = response };
         }
     }
 }

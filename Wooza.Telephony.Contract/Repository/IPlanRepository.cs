@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Wooza.Telephony.Model.Model;
 
 namespace Wooza.Telephony.Contract.Repository
@@ -9,6 +10,7 @@ namespace Wooza.Telephony.Contract.Repository
         Task<Plan> GetByIdAsync(long planId);
         Task<string> UpdatePlanAsync(Plan req);
         Task<string> DeletePlanAsync(long planId);
-        
+        Task<List<Plan>> ListPlansAsync();
+
     }
 }

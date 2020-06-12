@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Wooza.Telephony.Contract.Repository;
@@ -59,6 +60,12 @@ namespace Wooza.Telephony.Repository.Repository
             {
                 return ex.Message;
             }
+        }
+
+        public async Task<List<Plan>>ListPlansAsync()
+        {
+              List < Plan> resposne = await _context.Plans.ToListAsync<Plan>();
+            return resposne;
         }
     }
 }
