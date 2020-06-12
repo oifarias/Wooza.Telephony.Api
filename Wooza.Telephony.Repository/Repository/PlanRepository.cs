@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Wooza.Telephony.Contract.Repository;
 using Wooza.Telephony.Model.Model;
@@ -16,9 +17,15 @@ namespace Wooza.Telephony.Repository.Repository
             _context = context;
         }
 
+        public  async Task<string> DeletePlanAsync(long planId)
+        {
+            Plan result = await GetByIdAsync(planId);
+             _context.Plans.RemoveRange(result);
+            return "plan successfully deleted";
+        }
+
         public async Task<Plan> GetByIdAsync(long planId)
         {
-
             var req = new Plan() { PlanId = planId };
             return await _context.Plans.Include(x => x.PlanId).FirstOrDefaultAsync();
         }

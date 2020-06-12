@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Wooza.Telephony.Api.Controllers.ErroResponse;
 using Wooza.Telephony.Application.Services.Handlers.Model;
 using Wooza.Telephony.Application.Services.Handlers.Commands.PutPlan;
+using Wooza.Telephony.Application.Services.Handlers.Commands.DeletePlan;
 
 namespace Wooza.Telephony.Api.Controllers
 {
@@ -38,6 +39,19 @@ namespace Wooza.Telephony.Api.Controllers
             try
             {
                 var response = await _mediator.Send(request);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+        [HttpDelete("api/telephony/{PlanId}")]
+        public async Task<IActionResult> DeletePlan(long PlanId)
+        {
+            try
+            {
+                var response = await _mediator.Send(new DeletePlanRequest() { PlanId = PlanId});
                 return Ok(response);
             }
             catch (Exception ex)

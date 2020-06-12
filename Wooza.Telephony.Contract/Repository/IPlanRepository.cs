@@ -7,6 +7,8 @@ namespace Wooza.Telephony.Contract.Repository
     {
          Task<string> NewPlanAsync(Plan req);
         Task<Plan> GetByIdAsync(long planId);
-        Task<string> UpdatePlanAsync(Plan req); 
+        Task<string> UpdatePlanAsync(Plan req);
+        Task<string> DeletePlanAsync(long planId);
+        
     }
 }
