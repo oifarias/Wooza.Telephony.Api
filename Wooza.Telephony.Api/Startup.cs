@@ -3,6 +3,7 @@ using App.Metrics.Extensions.Configuration;
 using App.Metrics.Formatters.Prometheus;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,9 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Linq;
 using System.Reflection;
+using Wooza.Telephony.Contract.Repository;
 using Wooza.Telephony.Repository.Data;
+using Wooza.Telephony.Repository.Repository;
 
 namespace Wooza.Telephony.Api
 {
@@ -25,26 +28,26 @@ namespace Wooza.Telephony.Api
         {
             Configuration = configuration;
         }
-
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLocalization(opt => opt.ResourcesPath = "Resources");
             services
                 .AddControllers()
                 .AddControllersAsServices()
                 .AddMetrics();
-            services
-                .AddDbContext<DataContext>
-                (opt => opt.UseInMemoryDatabase("DataBasePlan"));
+
+            services.AddDbContext<DataContext> (opt => opt.UseInMemoryDatabase("DataBasePlan"));
             services.AddScoped<DataContext, DataContext>();
-            
+           
             services.Configure<KestrelServerOptions>(options =>
             {
                 options.AllowSynchronousIO = true;
             });
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddCors();
-
             services.AddHealthChecks();
+
 
             services.AddSwaggerGen(c =>
             {
@@ -54,8 +57,10 @@ namespace Wooza.Telephony.Api
                 var xmlPath = System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
-
-
+            services.AddSession();
+            services.AddTransient<IPlanRepository, PlanRepository>();
+            services.AddMemoryCache();
+            services.AddMvc();
             var metrics = AppMetrics.CreateDefaultBuilder()
                 .Configuration.ReadFrom(Configuration)
                 .OutputMetrics.AsPrometheusPlainText()
@@ -78,7 +83,7 @@ namespace Wooza.Telephony.Api
             {
                 app.UseHsts();
             }
-
+          
             app.UseRouting();
 
             app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());

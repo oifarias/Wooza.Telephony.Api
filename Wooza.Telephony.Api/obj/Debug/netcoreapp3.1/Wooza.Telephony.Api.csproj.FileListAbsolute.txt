@@ -106,3 +106,4 @@ C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.
 C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Api\obj\Debug\netcoreapp3.1\Wooza.Telephony.Api.dll
 C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Api\obj\Debug\netcoreapp3.1\Wooza.Telephony.Api.pdb
 C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Api\obj\Debug\netcoreapp3.1\Wooza.Telephony.Api.genruntimeconfig.cache
+C:\Users\lucas.farias\Documents\lucas\Wooza\Wooza.Telephony.Api\Wooza.Telephony.Api\obj\Debug\netcoreapp3.1\Wooza.Telephony.Api.MvcApplicationPartsAssemblyInfo.cs

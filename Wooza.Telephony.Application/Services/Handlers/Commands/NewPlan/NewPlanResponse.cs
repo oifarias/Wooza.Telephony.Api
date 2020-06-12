@@ -2,6 +2,6 @@
 {
     public class NewPlanResponse
     {
-
+        public string Response { get; set; }
     }
 }

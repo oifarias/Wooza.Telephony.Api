@@ -31,8 +31,8 @@ namespace Wooza.Telephony.Application.Services.Handlers
                 PlanId = request.PlanId,
                 PlanType = new PlanType { IdType = request.PlanType.GetHashCode(), Type = request.PlanType.ToString() }
             };
-            await _planRepository.NewPlan(newPlan);
-            return new NewPlanResponse();
+            var response = await _planRepository.NewPlanAsync(newPlan);
+            return new NewPlanResponse() { Response = response};
         }
 
     }
