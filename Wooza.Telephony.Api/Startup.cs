@@ -58,7 +58,7 @@ namespace Wooza.Telephony.Api
                 c.IncludeXmlComments(xmlPath);
             });
             services.AddSession();
-            services.AddTransient<IPlanRepository, PlanRepository>();
+            services.AddScoped<IPlanRepository, PlanRepository>();
             services.AddMemoryCache();
             services.AddMvc();
             var metrics = AppMetrics.CreateDefaultBuilder()

@@ -6,5 +6,7 @@ namespace Wooza.Telephony.Contract.Repository
     public interface IPlanRepository
     {
          Task<string> NewPlanAsync(Plan req);
+        Task<Plan> GetByIdAsync(long planId);
+        Task<string> UpdatePlanAsync(Plan req); 
     }
 }

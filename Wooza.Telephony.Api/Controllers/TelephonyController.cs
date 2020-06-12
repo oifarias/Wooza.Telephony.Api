@@ -6,10 +6,10 @@ using System;
 using System.Threading.Tasks;
 using Wooza.Telephony.Api.Controllers.ErroResponse;
 using Wooza.Telephony.Application.Services.Handlers.Model;
+using Wooza.Telephony.Application.Services.Handlers.Commands.PutPlan;
 
 namespace Wooza.Telephony.Api.Controllers
 {
-    [Route("/api/telephony")]
     public class TelephonyController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -19,36 +19,31 @@ namespace Wooza.Telephony.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("/new-plan")]
-        public async Task<IActionResult>NewPlan(NewPlanRequest request)
+        [HttpPost("api/telephony/new-plan")]
+        public async Task<IActionResult>NewPlan([FromBody]NewPlanRequest request)
         {
             try
             {
                 var response = await _mediator.Send(request);
                 return Ok(response);
             }
-            catch(ValidationException ex)
+            catch(Exception ex)
             {
-                return BadRequest(ResponseError(ex));
+                return BadRequest(ex);
             }
         }
-
-
-        protected ErrorResponse ResponseError(ValidationException ex)
+        [HttpPut("api/telephony/{PlanId}")]
+        public async Task<IActionResult> UpdatePlan([FromBody] UpdatePlanRequest request)
         {
-
-            var response = new ErrorResponse();
-
-            ex.Errors.ToList().ForEach(e =>
+            try
             {
-                response.Validations.Add(new ErrorResponse.ErrorFieldMessage()
-                {
-                    Field = e.PropertyName.ToLower(),
-                    Message = e.ErrorMessage
-                });
-            });
-
-            return response;
+                var response = await _mediator.Send(request);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
     }
 }

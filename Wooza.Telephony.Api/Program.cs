@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Exceptions;
 using System;
 
 namespace Wooza.Telephony.Api
@@ -9,29 +11,25 @@ namespace Wooza.Telephony.Api
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args)
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             Serilog.Debugging.SelfLog.Enable(Console.Error);
 
-            return Host.CreateDefaultBuilder(args)
-                    .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
-                        .ReadFrom.Configuration(hostingContext.Configuration)
-                        .WriteTo.Console()
-                        .Enrich.FromLogContext()
-                        .Enrich.WithAssemblyName()
-                        .Enrich.WithAssemblyInformationalVersion()
-                    )
-                    .ConfigureWebHostDefaults(webBuilder =>
-                    {
-                        webBuilder.UseStartup<Startup>();
-                        webBuilder.ConfigureAppMetricsHostingConfiguration(options =>
-                            options.MetricsEndpoint = "/internal/metrics");
-                        webBuilder.ConfigureKestrel(options => options.AllowSynchronousIO = true);
-                    });
+            return WebHost.CreateDefaultBuilder(args)
+                .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
+                    .ReadFrom.Configuration(hostingContext.Configuration)
+                    .WriteTo.Console()
+                    .Enrich.FromLogContext()
+                    .Enrich.WithExceptionDetails()
+                    .Enrich.WithAssemblyName()
+                    .Enrich.WithAssemblyInformationalVersion()
+                )
+                .UseStartup<Startup>();
+
         }
-            
+
     }
 }
